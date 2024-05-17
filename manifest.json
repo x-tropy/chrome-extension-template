@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "docApe",
+  "version": "1.0.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": { "128": "public/ape.png" }
+  },
+  "icons": {
+    "128": "public/ape.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/embed/content.tsx"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
